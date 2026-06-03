@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Community Event Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav{
+            background-color: lightblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a{
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        section{
+            padding: 20px;
+            text-align: center;
+        }
+
+        #welcomeBanner{
+            background-color: blue;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        #welcomeBanner h2{
+            margin-bottom: 15px;
+            font-size: 32px;
+        }
+
+        #welcomeBanner p{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 10px;
+        }
+
+        .highlight{
+            background-color: yellow;
+            color: black;
+            padding: 5px 10px;
+            display: inline-block;
+            border-radius: 5px;
+        }
+
+        .gallery-img{
+            border: 3px solid black;
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+        }
+
+        table{
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td{
+            text-align: center;
+            padding: 15px;
+        }
+
+        form{
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 2px solid black;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        input, select, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+
+        button{
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover{
+            background-color: darkblue;
+        }
+
+        output{
+            color: green;
+            font-weight: bold;
+        }
+
+        #eventImage{
+            width: 250px;
+            height: 180px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        .slideshow-container{
+            width: 700px;
+            height: 400px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+            border: 4px solid black;
+        }
+
+        #promoImage{
+            width: 700px;
+            height: 400px;
+            object-fit: cover;
+            transition: 1s;
+        }
+
+        #savedPreference,
+        #location{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px){
+
+            nav a{
+                display: block;
+                margin: 10px 0;
+            }
+
+            form{
+                width: 90%;
+            }
+
+            .gallery-img{
+                width: 100%;
+                height: auto;
+            }
+
+            .slideshow-container{
+                width: 95%;
+                height: auto;
+            }
+
+            #promoImage{
+                width: 100%;
+                height: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#events">Events</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+    <div id="welcomeBanner">
+
+        <h2 class="highlight">
+            Welcome User
+        </h2>
+
+        <p>
+            Welcome to the Community Event Portal
+        </p>
+
+        <span style="color:red; font-weight:bold;">
+            Special Offer: Free Event Registration!
+        </span>
+
+    </div>
+
+    <section id="home">
+
+        <h1>Home Section</h1>
+
+        <p>Welcome to the Community Event Portal</p>
+
+    </section>
+
+    <section id="events">
+
+        <h1>Events Section</h1>
+
+        <p>All community events are displayed here.</p>
+
+    </section>
+
+    <section id="contact">
+
+        <h1>Contact Section</h1>
+
+        <p>Contact us for more information.</p>
+
+    </section>
+
+    <center>
+
+        <a href="help.html" target="_blank">
+            Open Help Page
+        </a>
+
+    </center>
+
+    <h1>Upcoming Community Event Promotions</h1>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+
+            <td>
+
+                <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=150&fit=crop"
+                alt="Music Event"
+                class="gallery-img">
+
+                <p>Enjoy energetic live music concerts.</p>
+
+            </td>
+
+            <td>
+
+                <img
+                src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=200&h=150&fit=crop"
+                alt="Food Event"
+                class="gallery-img">
+
+                <p>Explore delicious dishes and food stalls.</p>
+
+            </td>
+
+            <td>
+
+                <img
+                src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=200&h=150&fit=crop"
+                alt="Sports Event"
+                class="gallery-img">
+
+                <p>Enjoy thrilling sports competitions.</p>
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td>
+
+                <img
+                src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=200&h=150&fit=crop"
+                alt="Dance Event"
+                class="gallery-img">
+
+                <p>Experience vibrant dance performances.</p>
+
+            </td>
+
+            <td>
+
+                <img
+                src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=200&h=150&fit=crop"
+                alt="Art Event"
+                class="gallery-img">
+
+                <p>Discover inspiring artworks and creativity.</p>
+
+            </td>
+
+            <td>
+
+                <img
+                src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=200&h=150&fit=crop"
+                alt="Community Meeting"
+                class="gallery-img">
+
+                <p>Connect with your local community members.</p>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+    <h1>Event Registration Form</h1>
+
+    <form onsubmit="showMessage(); return false;">
+
+        <label>Name:</label>
+
+        <input
+        type="text"
+        placeholder="Enter your name"
+        required
+        autofocus>
+
+        <label>Email:</label>
+
+        <input
+        type="email"
+        placeholder="Enter your email"
+        required>
+
+        <label>Date:</label>
+
+        <input
+        type="date"
+        required>
+
+        <label>Event Type:</label>
+
+        <select id="eventType" required>
+
+            <option value="">Select Event</option>
+
+            <option>Music Event</option>
+
+            <option>Sports Event</option>
+
+            <option>Food Festival</option>
+
+        </select>
+
+        <label>Message:</label>
+
+        <textarea
+        placeholder="Enter your message"
+        required></textarea>
+
+        <button type="submit">
+            Register
+        </button>
+
+        <br><br>
+
+        <output id="result"></output>
+
+    </form>
+
+    <h1>Event Feedback</h1>
+
+    <form>
+
+        <label>Phone Number:</label>
+
+        <input
+        type="text"
+        id="phone"
+        onblur="validatePhone()"
+        placeholder="Enter phone number">
+
+        <p id="phoneMessage"></p>
+
+        <label>Select Event:</label>
+
+        <select onchange="showFee(this.value)">
+
+            <option value="">Select Event</option>
+
+            <option value="500">Music Event</option>
+
+            <option value="300">Sports Event</option>
+
+            <option value="400">Food Festival</option>
+
+        </select>
+
+        <p id="eventFee"></p>
+
+        <label>Feedback:</label>
+
+        <textarea
+        id="feedback"
+        onkeyup="countCharacters()"
+        placeholder="Enter feedback"></textarea>
+
+        <p>
+            Character Count:
+            <span id="charCount">0</span>
+        </p>
+
+        <button type="button" onclick="submitFeedback()">
+            Submit Feedback
+        </button>
+
+    </form>
+
+    <br>
+
+    <center>
+
+        <img
+        src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=250&h=180&fit=crop"
+        id="eventImage"
+        ondblclick="enlargeImage()">
+
+    </center>
+
+    <h1>Community Event Promo</h1>
+
+    <div class="slideshow-container">
+
+        <img
+        id="promoImage"
+        src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=700&h=400&fit=crop">
+
+    </div>
+
+    <br>
+
+    <center>
+
+        <audio autoplay controls loop>
+
+            <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mp3">
+
+        </audio>
+
+    </center>
+
+    <h1>User Preferences</h1>
+
+    <center>
+
+        <button onclick="savePreference()">
+            Save Preference
+        </button>
+
+        <button onclick="clearPreferences()">
+            Clear Preferences
+        </button>
+
+    </center>
+
+    <p id="savedPreference"></p>
+
+    <h1>Find Nearby Events</h1>
+
+    <center>
+
+        <button onclick="findLocation()">
+            Find Nearby Events
+        </button>
+
+    </center>
+
+    <p id="location"></p>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
